@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OTS Accessories</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/flickity.min.css" type="text/css">
+<script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+<script src="js/jquery.slide.js" type="text/javascript"></script>
+<script src="js/jquery-func.js" type="text/javascript"></script>
+<script src="js/flickity.pkgd.min.js" type="text/javascript"></script>
+</head>
+<body>
+<!-- Top -->
+<div id="top">
+  <div class="shell">
+    <!-- Header -->
+    <div id="header">
+      <h1 id="logo"><a href="#">OTS</a></h1>
+     
+      <div id="navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <!--<li><a href="#">Support</a></li>
+          <li><a href="#">My Account</a></li>-->
+          <li><a href="../Contact Us/contact us.html">Contact</a></li>
+          <li class="last"><a href="#" style="font-size:30px">🛒</a><b>My Cart</b></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Header -->
+  </div>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="css/images/slide1.jpg" height="375"  style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="css/images/slide2.jpg" height="375"  style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="css/images/slide3.jpg" height="375"  style="width:100%">
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000);
+      }
+    </script>
+    <!-- Slider -->
+    <!--<div id="slider">
+      <div id="slider-holder">
+        <ul>
+          <li><a href="#"><img src="css/images/slide1.jpg" alt="" /></a></li>
+          <li><a href="#"><img src="css/images/slide2.jpg" alt="" /></a></li>
+          <li><a href="#"><img src="css/images/slide1.jpg" alt="" /></a></li>
+          <li><a href="#"><img src="css/images/slide2.jpg" alt="" /></a></li>
+          <li><a href="#"><img src="css/images/slide1.jpg" alt="" /></a></li>
+          <li><a href="#"><img src="css/images/slide2.jpg" alt="" /></a></li>
+        </ul>
+      </div>
+      <div id="slider-nav"> <a href="#" class="prev">Previous</a> <a href="#" class="next">Next</a> </div>
+    </div>-->
+    <!-- End Slider -->
+  </div>
+</div>
+<!-- Top -->
+<!-- Main -->
+<div id="main">
+  <div class="shell">
+    <!-- Search, etc -->
+    <div class="options">
+      <div class="search">
+        <form action="#" method="post">
+          <span class="field">
+          <input type="text" class="blink" value="SEARCH" title="SEARCH" />
+          </span>
+          <input type="text" class="search-submit" value="GO" />
+        </form>
+      </div>
+      <!--<span class="left"><a href="#">Advanced Search</a></span>-->
+      <div class="right"> <span class="cart"> <a href="#" class="cart-ico">&nbsp;</a> <strong>₹0.00</strong> </span> <span class="left more-links"> <a href="#">Checkout</a> <a href="#">Details</a> </span> </div>
+    </div>
+    <!-- End Search, etc -->
+    <!-- Content -->
+    <div id="content">
+      <!-- Tabs -->
+      <div class="tabs">
+        <ul>
+          <li><a href="#" class="active"><span>Car Accessories</span></a></li>
+          <li><a href="#"><span>Bike Accessories</span></a></li>
+          <li><a href="#" class="red"><span>Top Accessories</span></a></li>
+        </ul>
+      </div>
+      <!-- Tabs -->
+      <!-- Container -->
+      <div id="container">
+        <div class="tabbed">
+          <!-- First Tab Content -->
+          <div class="tab-content" style="display:block;">
+            <div class="items">
+              <div class="cl">&nbsp;</div>
+              <ul>
+                <li>
+                  <div class="image"> <a href="Product/product.html"><img src="css/images/image1.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="Product/product.html"><img src="css/images/image3.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>5000 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="Product/product.html"><img src="css/images/image4.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>800 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="Product/product.html"><img src="css/images/image5.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>500 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="Product/product.html"><img src="css/images/image4.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="Product/product.html"><img src="css/images/image6.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>1500 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="Product/product.html"><img src="css/images/image3.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="Product/product.html"><img src="css/images/image1.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+              </ul>
+              <div class="cl">&nbsp;</div>
+            </div>
+          </div>
+          <!-- End First Tab Content -->
+          <!-- Second Tab Content -->
+          <div class="tab-content">
+            <div class="items">
+              <div class="cl">&nbsp;</div>
+              <ul>
+                <li>
+                  <div class="image"> <a href="#"><img src="css/images/image2.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="#"><img src="css/images/image7.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="#"><img src="css/images/image8.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="#"><img src="css/images/image9.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="#"><img src="css/images/image7.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="#"><img src="css/images/image2.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="#"><img src="css/images/image9.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="#"><img src="css/images/image8.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+              </ul>
+              <div class="cl">&nbsp;</div>
+            </div>
+          </div>
+          <!-- End Second Tab Content -->
+          <!-- Third Tab Content -->
+          <div class="tab-content">
+            <div class="items">
+              <div class="cl">&nbsp;</div>
+              <ul>
+                <li>
+                  <div class="image"> <a href="Product/product.html"><img src="css/images/image1.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="Product/product.html"><img src="css/images/image2.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="Product/product.html"><img src="css/images/image4.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="Product/product.html"><img src="css/images/image3.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="Product/product.html"><img src="css/images/image9.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="Product/product.html"><img src="css/images/image6.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="Product/product.html"><img src="css/images/image7.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="Product/product.html"><img src="css/images/image8.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="Product/product.html"><img src="css/images/image9.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="#"><img src="css/images/image5.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="#"><img src="css/images/image1.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="#"><img src="css/images/image2.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="#"><img src="css/images/image3.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="#"><img src="css/images/image2.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="#"><img src="css/images/image5.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+                <li>
+                  <div class="image"> <a href="#"><img src="css/images/image9.jpg" alt="" /></a> </div>
+                  <p>Universal Bike Body Cover - Sporty Blue<br />
+                    Brand Name: <a href="#">Universal Bike</a> </p>
+                  <p class="price">Price: <strong>400 INR</strong></p>
+                </li>
+              </ul>
+              <div class="cl">&nbsp;</div>
+            </div>
+          </div>
+          <!-- End Third Tab Content -->
+        </div>
+      </div>
+          <div class="img">
+            <a href="#"><img src="css/images/4.jpg" alt="TRENDING PRODUCTS" height="100" width="980" class="center"></a>
+            <div class="centered">TRENDING PRODUCTS</div>
+            </div>
+          <br>
+          <div class="carousel" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false }'>
+              <div class="carousel-cell">
+                <a href="Product/product.html"><img src="css/images/Trending/face shield.jpg" />Face Shield<br> ₹86/-</a>
+              </div>
+              <div class="carousel-cell">
+                <img src="css/images/Trending/Mobile Phone holder.jpg"/>Mobile Phone Holder<br> ₹300/-
+              </div>
+              <div class="carousel-cell">
+                <img src="css/images/Trending/Car Glass Cleaner.jpg">Car Glass Cleaner <br> ₹250/-
+              </div>
+              <div class="carousel-cell">
+                <img src="css/images/Trending/Car vacuum cleaner.jpg">Car Vacuum Cleaner <br> ₹950/-
+              </div>
+              <div class="carousel-cell">
+                <img src="css/images/Trending/Window sun shade.jpg"> Window Sun Shade <br> ₹650/-
+              </div>
+              <div class="carousel-cell">
+                <img src="css/images/Trending/Car key cover.jpg">Car key Cover <br> ₹450/-
+              </div>
+              <div class="carousel-cell">
+                <img src="css/images/Trending/full face helmet.jpg">Full Face Helmet <br> ₹550/-
+              </div>
+              <div class="carousel-cell">
+                <img src="css/images/Trending/Car vacuum cleaner.jpg">Car Vacuum Cleaner <br> ₹950/-
+              </div>
+              <div class="carousel-cell">
+                <img src="css/images/Trending/Water Spray for car.jpg">Water Spray for Car <br> ₹990/-
+              </div>
+            </div>
+            <br>
+          <br>
+          <div class="img">
+            <a href="#"><img src="css/images/combo.jpg" height="400" width="980"></a>
+            <br>
+            <br>
+      <div class="img">
+        <a href="#"><img src="css/images/4.jpg" alt="TOP CATEGORIES" height="100" width="980" class="center"></a>
+        <div class="centered">TOP PRODUCTS</div>
+        </div>
+      <br>
+        <div class="carousel" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false }'>
+          <div class="carousel-cell">
+            <img src="css/images/Top cat/full face helmet.jpg">Full Face Helmet <br> ₹550/-
+          </div>
+          <div class="carousel-cell">
+            <img src="css/images/Top cat/Water Spray for car.jpg">Water Spray for Car <br> ₹990/-
+          </div>
+          <div class="carousel-cell">
+            <img src="css/images/Top cat/face shield.jpg" />Face Shield<br> ₹86/-
+          </div>
+          <div class="carousel-cell">
+            <img src="css/images/Top cat/Mobile Phone holder.jpg"/>Mobile Phone Holder<br> ₹300/-
+          </div>
+          <div class="carousel-cell">
+            <img src="css/images/Top cat/Car Glass Cleaner.jpg">Car Glass Cleaner <br> ₹250/-
+          </div>
+          <div class="carousel-cell">
+            <img src="css/images/Top cat/Car vacuum cleaner.jpg">Car Vacuum Cleaner <br> ₹950/-
+          </div>
+          <div class="carousel-cell">
+            <img src="css/images/Top cat/Window sun shade.jpg"> Window Sun Shade <br> ₹650/-
+          </div>
+          <div class="carousel-cell">
+            <img src="css/images/Top cat/Car key cover.jpg">Car key Cover <br> ₹450/-
+          </div>
+          <div class="carousel-cell">
+            <img src="css/images/Top cat/Car vacuum cleaner.jpg">Car Vacuum Cleaner <br> ₹950/-
+          </div>
+        </div>
+        <br>
+      <br>
+      <!-- End Container -->
+    </div>
+    <!-- End Content -->
+  </div>
+</div>
+<!-- End Main -->
+</body>
+</html>

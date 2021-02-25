@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SignUp</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+        <link rel="stylesheet" href="SignUp.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <div class="main-box">
+            <div class="slider-cont">
+                <div class="signup-slider">
+                    <div class= "img-txt">
+                        <div class= "img-layer"></div>
+                         <h1>Find nearby mechanics</h1>
+                         <img src="SignUp1.jpg"/>
+                    </div> 
+                    <div class= "img-txt">
+                        <div class= "img-layer"></div>
+                         <h1>and nearby spare part stores</h1>
+                         <img src="SignUp3.jpg"/>
+                    </div>   
+                    <div class= "img-txt">
+                        <div class= "img-layer"></div>
+                         <h1>on your finger tips .</h1>
+                         <img src="SignUp2.jpg"/>
+                    </div>        
+                </div>
+            </div>
+            <div class="form-cont">
+                <div class="top-buttons">
+                    <button class="to-signup top-active-button">
+                      Sign Up
+                    </button>
+                    <button class="to-signin">
+                      Sign In
+                    </button> 
+                </div>
+                <div class="form form-signup">
+                    <form action="#">
+                        <label>FIRST NAME</label>
+                        <input type="text" placeholder="Enter your first name" required>
+                        <label>LAST NAME</label>
+                        <input type="text" placeholder="Enter your last name" required>
+                        <label>E-MAIL</label>
+                        <input type="email" id="e-mail"placeholder="example@gmail.com"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        <label>PASSWORD</label>  
+                        <div class="show-pwd"><input id="pwd" style="width: 82%;" type="password" placeholder="Enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" 
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                            <i id="show-pwd" class="fas fa-eye" onclick="f()" style="color:white;font-size:1rem;"></i>
+                        </div>
+                        <p class="terms">
+                                <input type="checkbox" required>
+                                   I agree to all the statements 
+                                <a href="#" class="lined-link">(Terms & Condition)</a>
+                            </p>
+                        <p class="p-btn"><input type="submit" class="form-btn" value="Sign up">
+                        </br>Already have an account? &nbsp<a href="#" class="lined-link to-signin-link">Sign-In</a></p>
+                    </form>
+                </div>
+                <div class="form form-signin">
+                    <form action="#">
+                        <label>E-MAIL</label>
+                        <input type="email" placeholder="Your e-mail" required>
+                        <label>PASSWORD</label>
+                        <div class="show-pwd1"><input id="pwd1" type="password" placeholder="Your password" style="width:82%;" required>
+                          <i id="show-pwd1" class="fas fa-eye" onclick="f1()" style="color:white;font-size:1rem;"></i>
+                        </div>
+                        <p class="p-btn"><input type ="submit" class="form-btn" value="Sign In"/>
+                        </br>New User? &nbsp<a href="#" class="lined-link to-signup-link">Create_new_account</a></p>
+                    </form>
+                </div>
+            </div>
+                <div class="clear-fix"></div>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+        <script src="SignUp.js"></script>
+    </body>
+    
+</html>
